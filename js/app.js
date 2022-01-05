@@ -29,15 +29,15 @@ let dayNumber = d.getDate();
 let year = d.getFullYear();
 let time = d.toLocaleTimeString();
 
-function prettyDate(day, dayNumber, month, year) {
-	const note = `Hello. Today is ${day}, ${month} ${dayNumber}, ${year}`;
+function giveDate(day, dayNumber, month, year) {
+	const note = `${day}, ${month} ${dayNumber}, ${year}`;
 	return note;
 }
 
-function prettyTime(newTime, ampm) {
-	const tell = `The time is approximately ${time}`;
+function tellTime(newTime, ampm) {
+	const tell = `${time}`;
 	return tell;
 }
 
-console.log(prettyDate(day, dayNumber, month, year));
-console.log(prettyTime(time));
+console.log(giveDate(day, dayNumber, month, year));
+console.log(tellTime(time));
